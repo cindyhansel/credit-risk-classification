@@ -1,7 +1,7 @@
 # credit-risk-classification
 Challenge 20
 
-# Module 12 Report Template
+# Module 12 Report 
 
 ## Overview of the Analysis
 
@@ -9,32 +9,28 @@ This Challenge uses various techniques to train and evaluate a model based on lo
 
 The learning model was based on financial data including the following features:
 
-    - the size of the loan
-    - the interest rate of the loan
-    - the income of the borrower
-    - the ratio of the borrower's debt-to-income
-    - the number of accounts of the borrower
-    - any financial derogatory marks
-    - the total debt of the borrower
+-  the size of the loan
+-  the interest rate of the loan
+-  the income of the borrower
+-  the ratio of the borrower's debt-to-income
+-  the number of accounts of the borrower
+-  any financial derogatory marks
+-  the total debt of the borrower
 
 The variable "loan_status" indicates if the loan is healthy (loan_status = "0") or high_risk (loan_statu = "1").
 
-
 The data set consists of 75036 healthy loans (96.8% of the data set) and 2500 unhealthy loans (3.2% of the data set).
 
+The following steps describe the methodology of the model training and testing:
 
-The following steps describe the methoology of the model training and testing:
-
-    - After reading the lending data csv into a dataframe, the labels set (y) from the loan status column is created. 
-    - The features (X) are created from the remaining columns.
-    - Using train_test_split from sklearn, the data is split into training and testing samples.
-    - The regression model is fitted by using the training data ("X_train and y_train).
-    - The predictions on the testing data by using the testing feature data and the fitted model are saved.
-    - Finally we can evaluated the model's performance, using a confusion matrix and a classification table.
+- After reading the lending data csv into a dataframe, the labels set (y) from the loan status column is created. 
+- The features (X) are created from the remaining columns.
+- Using train_test_split from sklearn, the data is split into training and testing samples.
+- The regression model is fitted by using the training data ("X_train and y_train).
+- The predictions on the testing data by using the testing feature data and the fitted model are saved.
+- Finally, evaluation the model's performanceis done using a confusion matrix and a classification table.
 
 The LogisticRegression model was used for this analysis.
-
-
 
 ## Results
 
