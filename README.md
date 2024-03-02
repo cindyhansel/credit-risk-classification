@@ -5,7 +5,7 @@ Challenge 20
 
 ## Overview of the Analysis
 
-This Challenge uses various techniques to train and evaluate a model based on loan risk. A dataset of historical lending activity from a peer-to-peer lending services company is used to build a model that can identify the creditworthiness of borrowers.
+This Challenge uses techniques to train and evaluate a model based on loan risk. A dataset of historical lending activity from a peer-to-peer lending services company is used to build a model that can identify the credit worthiness of borrowers.
 
 The learning model was based on financial data including the following features:
 
@@ -17,7 +17,7 @@ The learning model was based on financial data including the following features:
 -  any financial derogatory marks
 -  the total debt of the borrower
 
-The variable "loan_status" indicates if the loan is healthy (loan_status = "0") or high_risk (loan_statu = "1").
+The variable "loan_status" indicates if the loan is healthy (loan_status = "0") or high_risk (loan_status = "1").
 
 The data set consists of 75036 healthy loans (96.8% of the data set) and 2500 unhealthy loans (3.2% of the data set).
 
@@ -30,26 +30,26 @@ The following steps describe the methodology of the model training and testing:
 - The predictions on the testing data by using the testing feature data and the fitted model are saved.
 - Finally, evaluation the model's performanceis done using a confusion matrix and a classification table.
 
-The LogisticRegression model was used for this analysis.
+The LogisticRegression model was used for this analysis. The model splits the data with 75% used for training and 25% used for testing.
 
 ## Results
 
-  - Accuracy: 0.992 
+  - Accuracy: **0.992** 
 
       The regression model has a very high overall accuracy score at over 0.992, meaning the model correctly predicts the loan classification of healthy ("0") or high-risk ("1") over 99% of the time. 
 
-  - Precision of a healthy loan: 1.00
-  - Recall of a healthy loan: 0.99
+  - Precision of a healthy loan: **1.00**
+  - Recall of a healthy loan: **0.99**
 
       When observing the precision and recall scores, it can be see that when the regression model predicts a loan as healthy, it is correct 100% (precision score) of the time, and correctly identifies healthy loans 99% (recall score) of the time.
 
-  - Precision of a high-risk loan: 0.84
-  - Recall of a high-risk loan: 0.94
+  - Precision of a high-risk loan: **0.84**
+  - Recall of a high-risk loan: **0.94**
 
       When the model predicts a loan as high-risk, it is correct only 84% (precision score) of the time, and correctly identifies healthy loans 94% (recall score) of the time.
 
 
 ## Summary
 
-When determining loan risk, it is important to observe the healthy loans and the high-risk loans. However, it is a priority to identify those loans that are high-risk in order to minimize financial loss through payment fault. Since this model can identify only 84% of high-risk loans, it is not recommended. However, it may serve well as an initial parsing of borrowers, followed by a more rigorous evaluation.
+When determining loan risk, it is important to observe the healthy loans and the high-risk loans. However, it is a priority to identify those loans that are high-risk in order to minimize financial loss through payment default. Since this model can identify only 84% of high-risk loans, it is not recommended. However, it may serve well as an initial parsing of borrowers, followed by a more rigorous evaluation.
 
